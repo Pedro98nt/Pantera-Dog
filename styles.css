@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Oswald;
+  background: #0198e1;
+  color: #08457e;
+  text-align: center;
+  margin: 0;
+}
+
+.circle {
+  border: 20px solid #ffbf00;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 
+    0px 0px 0px 1px rgb(0,0,0),
+    0px 0px 5px 5px rgba(0,0,0,0.2),
+    inset 0px 0px 0px 1px rgb(0,0,0),
+    inset 0px 0px 5px 5px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  background: #ff9912;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  margin-left: -20px;
+  top: 40px;
+  position: relative;
+}
+
+h1, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+p {
+  font-size: 42px;
+}
+
+#face {
+  transform-origin: 105px 82px;
+  animation: tilt 4s ease 2s infinite alternate-reverse;
+}
+
+@keyframes tilt {
+  40%, 80% {
+    transform: rotate(45deg);
+  }
+}
